@@ -34,11 +34,49 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 85vh;
+  height: 40vh;
 }
-.logo {
-  height: 25rem;
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .logo {
+    height: 10rem;
+  }
+  .logo-div {
+    height: 40vh;
+  }
 }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .logo {
+    height: 15rem;
+  }
+  .logo-div {
+    height: 50vh;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .logo {
+    height: 20rem;
+  }
+  .logo-div {
+    height: 60vh;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .logo {
+    height: 25rem;
+  }
+  .logo-div {
+    height: 85vh;
+  }
+}
+
 .more {
   width: 5rem;
 }

@@ -26,19 +26,6 @@ h3 {
   font-size: 1rem !important;
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  h1 {
-    font-size: 3rem  !important;
-  }
-  h2 {
-    font-size: 2.25rem !important;
-  }
-  h3 {
-    font-size: 1.5rem !important;
-  }
-}
-
 .container {
   max-width: 100%;
   margin: auto !important;
@@ -54,9 +41,8 @@ h3 {
 }
 
 .content {
-  font-size: 120%;
-  margin: 10rem 0rem;
-  font-weight: 200;
+  font-size: 80%;
+  margin: 2rem 0rem;
 }
 
 .title {
@@ -73,6 +59,10 @@ h3 {
     grid-template-columns: auto;
     grid-gap: 30px;
   }
+  .content {
+    font-size: 100%;
+    margin: 4rem 3rem;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -84,8 +74,20 @@ h3 {
     grid-template-columns: auto auto;
     grid-gap: 40px;
   }
+  h1 {
+    font-size: 3rem  !important;
+  }
+  h2 {
+    font-size: 2.25rem !important;
+  }
+  h3 {
+    font-size: 1.5rem !important;
+  }
+  .content {
+    font-size: 100%;
+    margin: 6rem 0rem;
+  }
 }
-
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .container {
@@ -95,14 +97,14 @@ h3 {
     grid-template-columns: auto auto auto;
     grid-gap: 50px;
   }
-  .content {
-    font-size: 120%;
-    margin: 15rem 10rem;
-    font-weight: 400;
-  }
   .title {
     font-weight: 900;
     margin: 2rem;
+  }
+  .content {
+    font-size: 110%;
+    margin: 6rem 10rem;
+    font-weight: 150;
   }
 }
 
@@ -110,6 +112,11 @@ h3 {
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px;
+  }
+  .content {
+    font-size: 120%;
+    margin: 10rem 10rem;
+    font-weight: 200;
   }
 }
 

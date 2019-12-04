@@ -2,7 +2,7 @@
   <div class="container">
     <div
       id="support"
-      class="content"
+      class="content support-section"
     >
       <div class="title">
         Support us!
@@ -35,4 +35,7 @@ export default {
 </script>
 
 <style scoped>
+.support-section {
+  margin-bottom: 4rem;
+}
 </style>
