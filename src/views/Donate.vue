@@ -29,7 +29,7 @@ export default {
       addresses: [
         {
           coin: "Bitcoin",
-          address: "1Hf4NZ9yqGPxwJDMr3xaGVcuQc8v3Dkik9"
+          address: "1GKnqUEmdSKiCKHaRX5Se9yWxBBoh9xCkg"
         },
         {
           coin: "Bitcoin Cash",
@@ -38,6 +38,10 @@ export default {
         {
           coin: "Ethereum",
           address: "0x8f1e1e63c6138429ac437c558502f5816a4d53f0"
+        },
+        {
+          coin: "Stacks Token",
+          address: "SP2BTFE4Q91E6RPDMXG7QD2E53DX7E520NZMQS6VJ"
         }
       ]
     }
