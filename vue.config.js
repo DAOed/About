@@ -34,5 +34,18 @@ module.exports = {
       return {
       }
     }
+  },
+  pwa: {
+    name: 'About - Daoed',
+    /*
+    themeColor: '#',
+    msTileColor: '#',
+    appleMobileWebAppCapable: 'yes',
+    appleMobileWebAppStatusBarStyle: 'black',
+    */
+    workboxOptions: {
+      skipWaiting: true,
+      clientsClaim: true
+    }
   }
 }
