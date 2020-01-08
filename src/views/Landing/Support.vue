@@ -8,8 +8,7 @@
         Support us!
       </div>
       <div class="body">
-        Do you believe in the decentralized Internet? An Internet free of censorship, algorithms with an agenda, centralized control and one that is truly open?
-        We believe in that also, and work everyday to bring you applications that make it a reality. If you are impressed with our work so far, consider supporting us by making a generous donation.
+        Support us by following and sharing our products on social media, or voting for our products on Product hunt. You can also donate. Thank you for supporting our effort to make the Internet free of agenda powered algorithms, centralized control, censorship and spying.
       </div>
 
       <zi-button
@@ -18,7 +17,7 @@
         auto
         @click="donate"
       >
-        Donate now
+        Donate
       </zi-button>
     </div>
   </div>

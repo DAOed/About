@@ -8,7 +8,9 @@
         Mission
       </div>
       <div class="body">
-        Block Stacks is a new platform for building the decentralized Internet. While not affiliated with Block Stacks, Daoed uses the platform to provides this brave new world with everyday applications to foster the adoption and feasibility of the decentralized Internet.
+        We set out to build <i><b>D</b>ecentralized</i>, <i><b>A</b>utonomous</i> and <i><b>O</b>pen-sourced</i>
+        <br>
+        versions of your everyday apps on the <b>BlockStack</b> blockchain.
       </div>
     </div>
   </div>

@@ -4,9 +4,6 @@
       <div class="title">
         Decentralized Apps
       </div>
-      <div class="body">
-        We set out to build Decentralize, Autonomize and Organize your everyday apps. Did we succeed?
-      </div>
       <div
         class="three-grid-container"
         style="margin-top: 2rem;"
