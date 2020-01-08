@@ -8,7 +8,7 @@
         Support us!
       </div>
       <div class="body">
-        Support us by following and sharing our products on social media, or voting for our products on Product hunt. You can also donate. Thank you for supporting our effort to make the Internet free of agenda powered algorithms, centralized control, censorship and spying.
+        Support us by using our products, following and sharing our products on social media, or voting for our products on Product hunt. You can also donate. Thank you for supporting our effort to make the Internet free of manipulation, censorship and spying.
       </div>
 
       <zi-button

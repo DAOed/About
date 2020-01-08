@@ -8,7 +8,7 @@
         Mission
       </div>
       <div class="body">
-        We set out to build <i><b>D</b>ecentralized</i>, <i><b>A</b>utonomous</i> and <i><b>O</b>pen-sourced</i>
+        We set out to build <u><b>D</b>ecentralized</u>, <u><b>A</b>utonomous</u> and <u><b>O</b>pen-sourced</u>
         <br>
         versions of your everyday apps on the <b>BlockStack</b> blockchain.
       </div>
