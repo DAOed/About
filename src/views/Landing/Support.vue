@@ -13,7 +13,7 @@
 
       <zi-button
         type="abort"
-        style="margin: 5rem;"
+        style="margin: 2rem;"
         auto
         @click="go('/community')"
       >
@@ -21,7 +21,7 @@
       </zi-button>
       <zi-button
         type="abort"
-        style="margin: 5rem;"
+        style="margin: 2rem;"
         auto
         @click="go('/donate')"
       >
