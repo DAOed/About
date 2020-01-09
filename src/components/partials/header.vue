@@ -12,6 +12,13 @@
           <zi-button
             type="abort"
             auto
+            @click="goScroll('#dapps')"
+          >
+            DApps
+          </zi-button>
+          <zi-button
+            type="abort"
+            auto
             @click="toggle"
           >
             Lights!
@@ -40,6 +47,9 @@ export default {
         ZeitUI.theme.enableLight()
         this.theme = "light"
       }
+    },
+    goScroll (target) {
+      this.$scrollTo(target, 1500)
     }
   }
 }

@@ -1,5 +1,8 @@
 <template>
-  <div class="container">
+  <div
+    id="dapps"
+    class="container"
+  >
     <div class="content">
       <div class="title">
         Decentralized Apps
