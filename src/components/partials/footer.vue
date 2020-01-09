@@ -11,6 +11,12 @@
         </div>
         <div>
           <router-link
+            to="/community"
+            class="foot-item"
+          >
+            Community
+          </router-link>
+          <router-link
             to="/contact"
             class="foot-item"
           >

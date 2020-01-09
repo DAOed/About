@@ -15,7 +15,15 @@
         type="abort"
         style="margin: 5rem;"
         auto
-        @click="donate"
+        @click="go('/community')"
+      >
+        Community
+      </zi-button>
+      <zi-button
+        type="abort"
+        style="margin: 5rem;"
+        auto
+        @click="go('/donate')"
       >
         Donate
       </zi-button>
@@ -26,8 +34,8 @@
 <script>
 export default {
   methods: {
-    donate () {
-      this.$router.push("/donate")
+    go (route) {
+      this.$router.push(route)
     }
   }
 }

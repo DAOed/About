@@ -24,6 +24,24 @@ const routes = [
     }
   },
   {
+    path: "/community",
+    name: "community",
+    component: () => import(/* webpackChunkName: "community" */ "../views/Community.vue"),
+    meta: {
+      title: "Community - Daoed",
+      metaTags: [
+        {
+          name: "description",
+          content: "Join our community chat channels, follow us on social media and Steem."
+        },
+        {
+          property: "og:description",
+          content: "Join our community chat channels, follow us on social media and Steem."
+        }
+      ]
+    }
+  },
+  {
     path: "/donate",
     name: "donate",
     component: () => import(/* webpackChunkName: "donate" */ "../views/Donate.vue"),
