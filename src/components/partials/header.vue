@@ -63,7 +63,11 @@ export default {
       }
     },
     goScroll (target) {
-      this.$scrollTo(target, 1500)
+      if (this.$route.path !== "/") {
+        this.$router.push("/").then(() => this.$scrollTo(target, 1500))
+      } else {
+        this.$scrollTo(target, 1500)
+      }
     }
   }
 }
