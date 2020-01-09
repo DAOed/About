@@ -8,7 +8,7 @@
             class="wordmark"
           >
         </router-link>
-        <div>
+        <div class="menu-buttons">
           <zi-button
             type="abort"
             auto
@@ -21,7 +21,16 @@
             auto
             @click="toggle"
           >
-            Lights!
+            <div class="theme-toggle-icons">
+              <sun-icon
+                v-if="theme === 'dark'"
+                size="1.5x"
+              />
+              <moon-icon
+                v-else
+                size="1.5x"
+              />
+            </div>
           </zi-button>
         </div>
       </div>
@@ -31,8 +40,13 @@
 
 <script>
 import ZeitUI from "@zeit-ui/vue"
+import { SunIcon, MoonIcon } from "vue-feather-icons"
 
 export default {
+  components: {
+    SunIcon,
+    MoonIcon
+  },
   data: () => {
     return {
       theme: "light"
@@ -61,5 +75,14 @@ export default {
 }
 .wordmark {
   height: 30px;
+}
+.menu-buttons {
+  display: flex;
+  align-items: center;
+}
+.theme-toggle-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 </style>
