@@ -36,7 +36,6 @@ module.exports = {
     }
   },
   pwa: {
-    name: 'About - Daoed',
     /*
     themeColor: '#',
     msTileColor: '#',
