@@ -17,6 +17,7 @@
           class="item"
           :href="dapp.link"
           :title="dapp.title"
+          target="_blank"
         >
           <img
             :src="dapp.img"
@@ -36,6 +37,16 @@ export default {
         title: "Decentralized Search",
         img: "./img/dapps/daoed-search-wordmark.png",
         link: "https://daoed.com"
+      },
+      {
+        title: "Decentralized Drive",
+        img: "./img/dapps/daoed-drive-wordmark.png",
+        link: "https://drive.daoed.com"
+      },
+      {
+        title: "Decentralized Library",
+        img: "./img/dapps/daoed-library-wordmark.png",
+        link: "https://library.daoed.com"
       }
     ]
   })
