@@ -63,6 +63,14 @@
           >
             DApps
           </zi-button>
+
+          <zi-button
+            type="abort"
+            auto
+            @click="open('https://github.com/DAOed')"
+          >
+            Github
+          </zi-button>
         </div>
       </div>
     </div>
@@ -118,6 +126,9 @@ export default {
       } else {
         this.$scrollTo(target, 1500)
       }
+    },
+    open (url) {
+      window.open(url)
     }
   }
 }

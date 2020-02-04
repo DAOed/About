@@ -22,6 +22,14 @@
           >
             Contact
           </router-link>
+          <a
+            href="https://github.com/DAOed"
+            target="_blank"
+            to="media"
+            class="foot-item"
+          >
+            Github
+          </a>
           <router-link
             to="media"
             class="foot-item"
