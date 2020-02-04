@@ -17,7 +17,7 @@
               size="small"
               type="abort"
               auto
-              title="More dapps"
+              title="Our dapps"
             >
               <span style="display: flex; align-items: center;">
                 <grid-icon
