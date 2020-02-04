@@ -1,10 +1,10 @@
 <template>
   <div
     id="mission"
-    class="container"
+    class="medium-container"
   >
-    <div class="content">
-      <div class="title">
+    <div class="mg-t-5 mg-d-5">
+      <div class="w-400 s-120 mg-d-1">
         Contact
       </div>
       <div class="body">

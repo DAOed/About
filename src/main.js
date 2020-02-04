@@ -5,6 +5,7 @@ import router from "./router"
 import store from "./store"
 import ZeitUI from "@zeit-ui/vue"
 import VueScrollTo from "vue-scrollto"
+import "spa-generic-css"
 
 import "@zeit-ui/vue/dist/zeit-ui.css" // require style
 import "./index.css"

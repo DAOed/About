@@ -1,9 +1,15 @@
 <template>
-  <div class="">
+  <div>
     <Landing />
-    <Mission />
-    <DApps />
-    <Support />
+
+    <div class="medium-container">
+      <Mission class="item-section" />
+      <DApps class="item-section" />
+      <Support
+        class="item-section"
+        style="margin-bottom: 10rem"
+      />
+    </div>
   </div>
 </template>
 
@@ -22,3 +28,9 @@ export default {
   }
 }
 </script>
+
+<style>
+.item-section {
+  margin: 14rem 0rem;
+}
+</style>

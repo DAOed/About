@@ -1,30 +1,25 @@
 <template>
-  <div
-    id="dapps"
-    class="container"
-  >
-    <div class="content">
-      <div class="title">
-        Decentralized Apps
-      </div>
-      <div
-        class="three-grid-container"
-        style="margin-top: 2rem;"
+  <div id="dapps">
+    <div class="w-400 s-120 mg-d-1">
+      Decentralized Apps
+    </div>
+    <div
+      class="three-grid-container"
+      style="margin-top: 2rem;"
+    >
+      <a
+        v-for="(dapp, index) in dapps"
+        :key="index"
+        class="item"
+        :href="dapp.link"
+        :title="dapp.title"
+        target="_blank"
       >
-        <a
-          v-for="(dapp, index) in dapps"
-          :key="index"
-          class="item"
-          :href="dapp.link"
-          :title="dapp.title"
-          target="_blank"
+        <img
+          :src="dapp.img"
+          class="img"
         >
-          <img
-            :src="dapp.img"
-            class="img"
-          >
-        </a>
-      </div>
+      </a>
     </div>
   </div>
 </template>
