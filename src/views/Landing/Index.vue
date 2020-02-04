@@ -5,10 +5,7 @@
     <div class="medium-container">
       <Mission class="item-section" />
       <DApps class="item-section" />
-      <Support
-        class="item-section"
-        style="margin-bottom: 10rem"
-      />
+      <Support class="item-section last-section" />
     </div>
   </div>
 </template>
@@ -32,5 +29,16 @@ export default {
 <style>
 .item-section {
   margin: 14rem 0rem;
+}
+.last-section {
+  margin-bottom: 10rem !important;
+}
+@media only screen and (max-width: 600px) {
+  .item-section {
+    margin: 5rem 0rem;
+  }
+  .last-section {
+    margin-bottom: 5rem !important;
+  }
 }
 </style>
