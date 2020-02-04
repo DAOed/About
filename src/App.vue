@@ -21,19 +21,17 @@ export default {
     AppHeader,
     AppFooter
   },
-  mounted () {
-    // This callback runs before every route change, including on page load.
-
-    this.$router.beforeEach((to, from, next) => {
+  watch: {
+    $route (newRoute) {
       // This goes through the matched routes from last to first, finding the closest route with a title.
       // eg. if we have /some/deep/nested/route and /some, /deep, and /nested have titles, nested's will be chosen.
-      const nearestWithTitle = to.matched
+      const nearestWithTitle = newRoute.matched
         .slice()
         .reverse()
         .find(r => r.meta && r.meta.title)
 
       // Find the nearest route element with meta tags.
-      const nearestWithMeta = to.matched
+      const nearestWithMeta = newRoute.matched
         .slice()
         .reverse()
         .find(r => r.meta && r.meta.metaTags)
@@ -48,7 +46,7 @@ export default {
       )
 
       // Skip rendering meta tags if there are none.
-      if (!nearestWithMeta) return next()
+      if (!nearestWithMeta) return false
 
       // Turn the meta tag definitions into actual elements in the head.
       nearestWithMeta.meta.metaTags
@@ -66,9 +64,7 @@ export default {
         })
         // Add the meta tags to the document head.
         .forEach(tag => document.head.appendChild(tag))
-
-      next()
-    })
+    }
   }
 }
 </script>

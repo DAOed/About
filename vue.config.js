@@ -1,5 +1,6 @@
 var PrerenderSpaPlugin = require("prerender-spa-plugin")
 var path = require("path")
+var Renderer = PrerenderSpaPlugin.PuppeteerRenderer
 
 module.exports = {
   lintOnSave: process.env.NODE_ENV !== "production",
@@ -21,17 +22,30 @@ module.exports = {
     if (process.env.NODE_ENV === "production") {
       return {
         plugins: [
-          new PrerenderSpaPlugin(
-            path.resolve(__dirname, "dist"),
+          new PrerenderSpaPlugin({
+            staticDir: path.join(__dirname, 'dist'),
             [ "/", "/donate", "/contact", "/terms", "/privacy"],
-            {
-                // options
-            }
-          ),
+            indexPath: path.join(__dirname, 'dist', 'index.html'),
+            renderer: new Renderer({
+              injectProperty: '__PRERENDER_INJECTED',
+              inject: {
+                PRERENDER: true
+              },
+              headless: true,
+              renderAfterTime: 1000
+            })
+          })
         ],
       }
     } else {
       return {
+        devServer: {
+          headers: {
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE",
+            "Access-Control-Allow-Headers": "Content-Type"
+          }
+        },
       }
     }
   },
