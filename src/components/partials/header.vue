@@ -9,13 +9,36 @@
           >
         </router-link>
         <div class="menu-buttons">
-          <zi-button
-            type="abort"
-            auto
-            @click="goScroll('#dapps')"
+          <zi-popover
+            :hoverable="true"
+            @command="app"
           >
-            DApps
-          </zi-button>
+            <zi-button
+              size="small"
+              type="abort"
+              auto
+              title="More dapps"
+            >
+              <span style="display: flex; align-items: center;">
+                <grid-icon
+                  class="icon-class"
+                  size="1.5x"
+                />
+              </span>
+            </zi-button>
+            <template v-slot:dropdown>
+              <zi-popover-item command="search">
+                DAOed Search
+              </zi-popover-item>
+              <zi-popover-item command="drive">
+                DAOed Drive
+              </zi-popover-item>
+              <zi-popover-item command="library">
+                DAOed Library
+              </zi-popover-item>
+            </template>
+          </zi-popover>
+
           <zi-button
             type="abort"
             auto
@@ -32,6 +55,14 @@
               />
             </div>
           </zi-button>
+
+          <zi-button
+            type="abort"
+            auto
+            @click="goScroll('#dapps')"
+          >
+            DApps
+          </zi-button>
         </div>
       </div>
     </div>
@@ -40,12 +71,13 @@
 
 <script>
 import ZeitUI from "@zeit-ui/vue"
-import { SunIcon, MoonIcon } from "vue-feather-icons"
+import { SunIcon, MoonIcon, GridIcon } from "vue-feather-icons"
 
 export default {
   components: {
     SunIcon,
-    MoonIcon
+    MoonIcon,
+    GridIcon
   },
   data: () => {
     return {
@@ -53,6 +85,24 @@ export default {
     }
   },
   methods: {
+    app (name) {
+      let url = ""
+
+      switch (name) {
+      case "search":
+        url = "https://daoed.com"
+        break
+      case "drive":
+        url = "https://drive.daoed.com"
+        break
+      case "library":
+        url = "https://library.daoed.com"
+        break
+      default:
+      }
+
+      window.open(url)
+    },
     toggle () {
       if (this.theme === "light") {
         ZeitUI.theme.enableDark()
