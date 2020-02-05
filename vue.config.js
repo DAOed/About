@@ -24,7 +24,7 @@ module.exports = {
         plugins: [
           new PrerenderSpaPlugin({
             staticDir: path.join(__dirname, 'dist'),
-            [ "/", "/donate", "/contact", "/terms", "/privacy"],
+            routes: ["/", "/donate", "/contact", "/terms", "/privacy"],
             indexPath: path.join(__dirname, 'dist', 'index.html'),
             renderer: new Renderer({
               injectProperty: '__PRERENDER_INJECTED',
